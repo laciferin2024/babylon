@@ -262,15 +262,3 @@ require (
 	rsc.io/tmplfunc v0.0.3 // indirect
 	sigs.k8s.io/yaml v1.4.0 // indirect
 )
-
-// Long lived replaces of Cosmos SDK
-// see: https://github.com/cosmos/cosmos-sdk/blob/v0.50.3/go.mod
-replace (
-	// use cosmos fork of keyring
-	github.com/99designs/keyring => github.com/cosmos/keyring v1.2.0
-
-	github.com/gogo/protobuf => github.com/regen-network/protobuf v1.3.3-alpha.regen.1
-
-	// Downgraded to stable version see: https://github.com/cosmos/cosmos-sdk/pull/14952
-	github.com/syndtr/goleveldb => github.com/syndtr/goleveldb v1.0.1-0.20210819022825-2ae1ddf74ef7
-)
